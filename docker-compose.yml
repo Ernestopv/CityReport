@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  cityreport:
+    image: ${DOCKER_REGISTRY-}cityreport
+    build:
+      context: .
+      dockerfile: CityReport/Dockerfile
+    ports:
+     - "80:80"

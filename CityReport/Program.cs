@@ -13,6 +13,7 @@ namespace CityReport
     {
         public static void Main(string[] args)
         {
+            Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Production");
             CreateHostBuilder(args).Build().Run();
         }
 

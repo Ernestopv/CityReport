@@ -38,7 +38,7 @@ export class Layout extends Component {
     await this.handleAstronomyBy(city);
     setTimeout(async () => {
       this.setState({ show: true });
-    }, 800);
+    }, 600);
   };
 
   handleTimeZoneBy = async (city) => {
