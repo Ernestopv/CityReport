@@ -93,6 +93,9 @@ export class Layout extends Component {
               </Route>
               <Route path="/not-found" component={NotFound} />
               <Redirect from="/" exact to="/cityReport" />
+              <Route path="/swagger">
+                <Redirect to="/not-found" />
+              </Route>
               <Redirect to="/not-found" />
             </Switch>
           </BrowserRouter>
